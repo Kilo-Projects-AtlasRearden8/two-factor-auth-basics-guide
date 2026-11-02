@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Authenticator Apps — Two-Factor Authentication Basics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="index.html" class="brand">Asdale Dynamics, LLC <span class="mark">·</span> Two-Factor Authentication Basics</a>
+    <p class="tagline">A beginner&rsquo;s guide to 2FA &mdash; plain English, step by step.</p>
+    <nav class="main-nav">
+      <a href="index.html">Start here</a>
+      <a href="02-authenticator-apps.html" class="active">Authenticator apps</a>
+      <a href="03-sms-risks.html">SMS risks</a>
+      <a href="04-recovery-codes.html">Recovery codes</a>
+      <a href="05-backing-up-accounts.html">Backing up accounts</a>
+      <a href="06-setup-email.html">Set up: email</a>
+      <a href="07-setup-banking.html">Set up: banking</a>
+      <a href="08-setup-ai-tools.html">Set up: AI tools</a>
+      <a href="worksheet.html">Printable worksheet</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrapper">
+  <article>
+    <header class="page-header no-print">
+      <h1 class="page-title">Authenticator Apps</h1>
+      <p class="page-subtitle">The most recommended way to do two-factor authentication.</p>
+      <p class="breadcrumbs"><a href="index.html">Start here</a> &rsaquo; Authenticator apps</p>
+    </header>
+
+    <main>
+      <p>When you turn on 2FA for an account, the app shows you a six-digit code that changes every 30 seconds. When you log in, you enter your password <em>and</em> the current code from the app.</p>
+      <p>Because the code changes constantly and only lives on your phone, someone who steals your password still can&rsquo;t get in &mdash; they don&rsquo;t have your phone.</p>
+
+      <h2>Why authenticator apps are the best everyday choice</h2>
+      <ul>
+        <li>They work without cell service or Wi-Fi (the codes are generated on your phone)</li>
+        <li>They&rsquo;re faster than waiting for a text message</li>
+        <li>They&rsquo;re not tied to your phone number, so SIM-swap attacks don&rsquo;t work against them</li>
+        <li>Most are free</li>
+      </ul>
+
+      <h2>Popular free authenticator apps</h2>
+      <table>
+        <thead>
+          <tr><th>App</th><th>Platform</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Google Authenticator</td><td>iPhone, Android</td><td>Simple, widely supported</td></tr>
+          <tr><td>Microsoft Authenticator</td><td>iPhone, Android</td><td>Can back up to your cloud account</td></tr>
+          <tr><td>Authy</td><td>iPhone, Android</td><td>Can back up and sync across devices</td></tr>
+          <tr><td>Aegis</td><td>Android</td><td>Open source, encrypted backups</td></tr>
+          <tr><td>Raivo OTP</td><td>iPhone</td><td>Open source, simple</td></tr>
+        </tbody>
+      </table>
+      <p>You only need one. Pick whichever is easiest for you to install and use.</p>
+
+      <h2>How to set up an authenticator app (general steps)</h2>
+      <ol>
+        <li>Install the app from your phone&rsquo;s app store (Apple App Store or Google Play Store).</li>
+        <li>Go to the account&rsquo;s security settings. Look for &ldquo;Two-factor authentication,&rdquo; &ldquo;2FA,&rdquo; &ldquo;Two-step verification,&rdquo; or &ldquo;Login security.&rdquo;</li>
+        <li>Turn on 2FA and choose &ldquo;Authenticator app&rdquo; (sometimes called an &ldquo;app-based code&rdquo; or &ldquo;TOTP&rdquo;).</li>
+        <li>Scan the QR code the website shows you with your authenticator app. Or, if scanning doesn&rsquo;t work, copy the long &ldquo;setup key&rdquo; the website gives you and type it into the app manually.</li>
+        <li>The app will show a six-digit code. Type that code into the website to prove it works.</li>
+        <li>Save your recovery codes (see the <a href="04-recovery-codes.html">recovery codes</a> chapter) before you finish.</li>
+      </ol>
+      <p>After this, logging in means: password + current code from your app.</p>
+
+      <h2>Tips for using your authenticator app</h2>
+      <ul>
+        <li>Don&rsquo;t delete the app until you&rsquo;ve saved recovery codes and moved your accounts elsewhere. If you delete the app, you could be locked out.</li>
+        <li>Don&rsquo;t share your codes with anyone. A real company will never call or message you asking for your authenticator code.</li>
+        <li>If you get a new phone, move your accounts to the new phone <em>before</em> you wipe or give away the old one.</li>
+      </ul>
+
+      <div class="credit-block no-print" style="margin-top:2rem; padding-top:1rem; border-top:1px solid var(--line); font-size:0.85rem; color:var(--muted);">
+        <p><strong>Written and published by <span class="credit">Asdale Dynamics, LLC</span> (Indiana, formed October 2026).</strong></p>
+        <p>MIT License. Copyright (c) 2026 Asdale Dynamics, LLC. See <a href="../LICENSE">LICENSE</a>.</p>
+        <p><a href="worksheet.html">Open the printable worksheet &rarr;</a></p>
+      </div>
+    </main>
+  </article>
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p class="credit">Written and published by <strong>Asdale Dynamics, LLC</strong> (Indiana, formed October 2026).</p>
+    <p>MIT License. Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+  </div>
+</footer>
+
+</body>
+</html>

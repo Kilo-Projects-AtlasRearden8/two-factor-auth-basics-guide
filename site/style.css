@@ -1,0 +1,237 @@
+/* Two-Factor Authentication Basics — site styles */
+/* Asdale Dynamics, LLC — MIT License, Copyright (c) 2026 Asdale Dynamics, LLC */
+
+:root {
+  --bg: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --soft: #f3f4f6;
+  --max-width: 720px;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a { color: var(--accent); text-decoration: underline; }
+a:hover { color: var(--accent-hover); }
+
+/* ---------- Header / Nav ---------- */
+
+.site-header {
+  background: var(--soft);
+  border-bottom: 1px solid var(--line);
+  padding: 1.25rem 1rem;
+  position: sticky;
+  top: 0;
+}
+
+.site-header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand .mark {
+  color: var(--accent);
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.main-nav a {
+  font-size: 0.9rem;
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+}
+
+.main-nav a:hover, .main-nav a.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* ---------- Layout ---------- */
+
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+chapter-page, article {
+  display: block;
+}
+
+header.page-header {
+  margin-bottom: 1.5rem;
+}
+
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  line-height: 1.25;
+}
+
+.page-subtitle {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.breadcrumbs {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0.75rem 0 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.breadcrumbs a { color: var(--muted); text-decoration: none; border-bottom: 1px dotted var(--muted); }
+.breadcrumbs a:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ---------- Content ---------- */
+
+main h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 2rem 0 0.75rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.35rem;
+}
+
+main h2:first-child { margin-top: 0; border: none; }
+
+main h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1.75rem 0 0.5rem;
+}
+
+main p { margin: 0 0 1rem; }
+
+main ul, main ol { margin: 0 0 1rem 1.25rem; padding-left: 0; }
+main li { margin: 0 0 0.4rem; }
+
+main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+main th, main td {
+  border: 1px solid var(--line);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+main th { background: var(--soft); font-weight: 600; }
+
+main code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875rem;
+  background: var(--soft);
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+  color: var(--text);
+}
+
+main blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ---------- Worksheet ---------- */
+
+.worksheet-table td {
+  height: 2.6rem;
+  vertical-align: top;
+}
+
+.worksheet-note {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 2rem 1rem 3rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.site-footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.credit {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ---------- Print ---------- */
+
+@media print {
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .site-header, .site-footer, .main-nav, .breadcrumbs, .no-print {
+    display: none !important;
+  }
+  .wrapper { padding: 0; }
+  main h2 { page-break-after: avoid; }
+  main blockquote, main table { page-break-inside: avoid; }
+  a { color: #000; text-decoration: none; }
+  .worksheet-table td { height: auto; min-height: 2.2rem; }
+  .credit { display: block; text-align: center; margin-top: 1.5rem; font-size: 0.8rem; }
+}

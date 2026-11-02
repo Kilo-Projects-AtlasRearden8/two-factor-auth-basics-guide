@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMS Risks — Two-Factor Authentication Basics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="index.html" class="brand">Asdale Dynamics, LLC <span class="mark">·</span> Two-Factor Authentication Basics</a>
+    <p class="tagline">A beginner&rsquo;s guide to 2FA &mdash; plain English, step by step.</p>
+    <nav class="main-nav">
+      <a href="index.html">Start here</a>
+      <a href="02-authenticator-apps.html">Authenticator apps</a>
+      <a href="03-sms-risks.html" class="active">SMS risks</a>
+      <a href="04-recovery-codes.html">Recovery codes</a>
+      <a href="05-backing-up-accounts.html">Backing up accounts</a>
+      <a href="06-setup-email.html">Set up: email</a>
+      <a href="07-setup-banking.html">Set up: banking</a>
+      <a href="08-setup-ai-tools.html">Set up: AI tools</a>
+      <a href="worksheet.html">Printable worksheet</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrapper">
+  <article>
+    <header class="page-header no-print">
+      <h1 class="page-title">SMS Risks</h1>
+      <p class="page-subtitle">Text-message codes are convenient &mdash; but they&rsquo;re the weakest common form of 2FA.</p>
+      <p class="breadcrumbs"><a href="index.html">Start here</a> &rsaquo; SMS risks</p>
+    </header>
+
+    <main>
+      <p>Many websites offer to send you a 2FA code by text message (SMS). It&rsquo;s convenient, but it&rsquo;s the weakest common form of 2FA. If you have a choice, use an authenticator app instead.</p>
+
+      <h2>Why SMS is risky</h2>
+      <h3>SIM swapping</h3>
+      <p>A criminal calls your phone company, pretends to be you, and convinces them to move your phone number to a new SIM card they control. Your texts &mdash; including 2FA codes &mdash; now go to their phone, not yours. They can reset your passwords and lock you out of your own accounts.</p>
+
+      <h3>Phone number theft or porting</h3>
+      <p>If someone steals your phone, or transfers (&ldquo;ports&rdquo;) your number to another carrier without your permission, they receive your text codes.</p>
+
+      <h3>Interception</h3>
+      <p>Text messages are not encrypted end-to-end. They can be intercepted on the mobile network, especially if someone has access to the carrier&rsquo;s systems.</p>
+
+      <h3>No phone, no code</h3>
+      <p>If your phone is lost, broken, dead, or in airplane mode, you can&rsquo;t receive the text. That&rsquo;s annoying at best and a lockout at worst.</p>
+
+      <h2>When SMS is okay</h2>
+      <p>SMS 2FA is much better than <em>no</em> 2FA at all. If a website only offers SMS, turn it on &mdash; it still stops most automated attacks. Just know it&rsquo;s not as strong as an authenticator app, and switch to an app if the website adds one later.</p>
+
+      <h2>Better alternatives</h2>
+      <p>In order of strength:</p>
+      <ol>
+        <li><strong>Authenticator app</strong> (recommended &mdash; see the <a href="02-authenticator-apps.html">previous chapter</a>)</li>
+        <li><strong>Security key</strong> (a small USB/NFC device you tap or plug in &mdash; strongest, but costs money)</li>
+        <li><strong>SMS text code</strong> (better than nothing, but risky)</li>
+        <li><strong>Email code</strong> (only if nothing else is available &mdash; your email is usually your account recovery address, so this creates a weak loop)</li>
+      </ol>
+
+      <div class="credit-block no-print" style="margin-top:2rem; padding-top:1rem; border-top:1px solid var(--line); font-size:0.85rem; color:var(--muted);">
+        <p><strong>Written and published by <span class="credit">Asdale Dynamics, LLC</span> (Indiana, formed October 2026).</strong></p>
+        <p>MIT License. Copyright (c) 2026 Asdale Dynamics, LLC. See <a href="../LICENSE">LICENSE</a>.</p>
+        <p><a href="worksheet.html">Open the printable worksheet &rarr;</a></p>
+      </div>
+    </main>
+  </article>
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p class="credit">Written and published by <strong>Asdale Dynamics, LLC</strong> (Indiana, formed October 2026).</p>
+    <p>MIT License. Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+  </div>
+</footer>
+
+</body>
+</html>
